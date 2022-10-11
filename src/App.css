@@ -131,6 +131,12 @@ input::-webkit-inner-spin-button {
   background-color:#6b646a !important;
 }
 
+@media(max-width:786px) {
+    .presaleTxt{
+        right: 25%;
+    }
+}
+
 @font-face {
   font-family: Oxi;
   src: url('./assets/fonts/Oxanium-VariableFont_wght.ttf');
