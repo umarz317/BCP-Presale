@@ -1,38 +1,148 @@
+body{
+  background: rgb(40,14,65);
+  background: linear-gradient(180deg, rgba(40,14,65,1) 2%, rgba(20,11,35,1) 39%);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.text{
+  font-family: HelvC;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.outline{
+  border: 10px;
+  border-style: solid;
+  border-color: coral;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainContainer{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
+
+.presaleDiv{
+  position: relative;
+  width: 450px;
+  height: 500px;
+  text-align: center;
+  border: 5px solid #8803b8;
+  border-radius: 20px;
+  filter: blur(100%);
+}
+
+.flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo{
+  margin-top: -50px;
+  width: 100px;
+}
+
+.presaleTxt{
+  font-size: medium;
+  position: absolute;
+  right:130px;
+  top:5px;
+}
+
+.progressBar{
+  margin-top: 80px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #cfc5cd !important;
+}
+
+.walletBtn{
+  margin-top: 160px;
+  padding-bottom:12px !important;
+  border-radius: 50px !important;
+  background-color: #4f0e45 !important;
+  border-color: #ff63e0 !important;
+  font-weight: bold !important;
+}
+
+.walletIndicator{
+  position: absolute;
+  right:10px;
+  top:30px;
+  display: flex;
+  background-color: rgb(122, 67, 122);
+  border-radius: 20px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  height: fit-content;
+  font-weight: bold;
+}
+
+.flex{
+  display: flex;
+  width:100%
+}
+
+.inputDiv{
+  background-color: rgb(122, 67, 122);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input{
+  background-color: transparent;
+  border: 0;
+  color: white;
+  border-bottom: 5px solid rgb(67, 37, 67);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input:focus{
+  outline: 0;
+}
+
+.input::placeholder{
+  color: rgb(185, 185, 185);
+}
+
+
+.notificationDiv{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.progress-bar{
+  background-color:#6b646a !important;
+}
+
+@font-face {
+  font-family: Oxi;
+  src: url('./assets/fonts/Oxanium-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: HelvC;
+  src: url('./assets/fonts/helvetica-compressed-5871d14b6903a.otf');
+}
+
+@font-face {
+  font-family: Helv;
+  src: url('./assets/fonts/Helvetica.ttf');
+}
+
